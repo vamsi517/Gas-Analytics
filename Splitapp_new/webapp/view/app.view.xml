@@ -1,0 +1,8 @@
+<mvc:View controllerName="com.splitapp.controller.app" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:vbm="sap.ui.vbm" xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<SplitApp id="splitapp">
+		<!--<Page title="Welcom to Gas Analytics demo.">-->
+		<!--	<content></content>-->
+		<!--</Page>-->
+	</SplitApp>
+</mvc:View>

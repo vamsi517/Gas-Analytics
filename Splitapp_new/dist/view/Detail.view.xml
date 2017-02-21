@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:commons="sap.ui.commons" controllerName="com.splitapp.controller.Detail"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:vbm="sap.ui.vbm">
+	<App>
+		<pages>
+			<Page title="Welcome to Gas Analytics">
+				<content>
+					<vbm:GeoMap id="vbi" height="100%" xmlns:l="sap.ui.layout" closeWindow="onCloseDetail" initialPosition="55.334953;25.261584;0" openWindow="onOpenDetail" initialZoom="13" width="100%">
+					<vbm:vos>
+					<vbm:Spots click="onClickItem" posChangeable="true"
+						scaleChangeable="false" contextMenu="onContextMenuItem" items="{/Spots/items}">
+						<vbm:items>
+							<vbm:Spot id="Spot" position="{pos}" tooltip="{tooltip}"
+								type="{type}" text="{text}" contentOffset="{contentOffset}"
+								click="onClickSpot" contextMenu="onContextMenuSpot">
+							</vbm:Spot>
+						</vbm:items>
+					</vbm:Spots>
+					<vbm:Spots>
+						<vbm:Spot type ="Success" text="Aster Hospital Mankhool" position="55.288734;25.252367;0"
+							>
+						</vbm:Spot>
+						<vbm:Spot text="Zulekha Hospital" type ="Error" position="55.383973;25.291186;0"
+							click="onClickSpot" contextMenu="onContextMenuSpot">
+						</vbm:Spot>
+						<vbm:Spot text="Thumbay Hospital Dubai" colors= "#FF0000"  position="55.364953;25.281584;0"
+						>
+						</vbm:Spot>
+					</vbm:Spots>
+					<vbm:Spots id="eSpot" />
+				</vbm:vos>
+					</vbm:GeoMap>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

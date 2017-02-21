@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:commons="sap.ui.commons"
+	controllerName="com.splitapp.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:vbm="sap.ui.vbm">
+	<App>
+		<pages>
+			<Page title="Welcome to Gas Analytics">
+				<content>
+					<vbm:GeoMap id="vbi" height="100%" xmlns:l="sap.ui.layout" closeWindow="onCloseDetail" initialPosition="55.334953;25.261584;0">
+					</vbm:GeoMap>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,53 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" 
+   xmlns:viz="sap.viz.ui5.controls" controllerName="com.splitapp.controller.Detail3"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Thumbay Hospital Dubai" showNavButton="true" navButtonPress="onPress" >
+				<content>
+					
+						<IconTabBar
+						selectedKey="db"
+						id="idTopLevelIconTabBar"
+						class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter id="idTabFilter" text="Customer details"  icon="sap-icon://detail-view">
+								
+								
+									<form:SimpleForm id="objectForm">
+									<form:content>
+										<Label id="name" text="Name"/>
+										<Text  text="Thumbay Hospital Dubai"/>
+										<Label  text="Address"/>
+										<Text text="13th Street, Near Stadium Metro Station, Behind Lulu Hypermarket, Al Qusais - United Arab Emirates"/>
+										<Label text="Website"/>
+										<Text text="thumbayhospital.com"/>
+										<Label text="Phone"/>
+										<Text text="+971 4 440 0500"/>
+											<Label text="Comments"/>
+										<Text text="Thumbay  Hospital:With our Hospitals and Medical Centre in Ajman, Fujairah, Sharjah, Dubai and Hyderabad (India), Thumbay Chain of Hospitals is one of the largest health care providers in the region. The group focuses on three pillars Education,Healthcare and Research."/>
+										
+										
+									</form:content>
+								</form:SimpleForm>
+								
+							</IconTabFilter>
+								<IconTabFilter id="idTabFilter1" text="Gas Levels" icon="sap-icon://bar-chart">
+									<viz:VizFrame xmlns="sap.viz" id="idcolumn"  width="100%">
+								
+								</viz:VizFrame>	
+							</IconTabFilter>
+							<IconTabFilter id="idTabFilter2" text="Gas Cusumption"  icon="sap-icon://line-chart">
+								<viz:VizFrame xmlns="sap.viz" id="idcolumn1"  width="100%" >
+								
+								</viz:VizFrame>		
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

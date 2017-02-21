@@ -1,0 +1,51 @@
+{
+	"Customers": [{
+		"ID": 1001,
+		"Name": "Aster Hospital Mankhool",
+		"Address": "Kuwait Road,Al Mankhool,Bur Dubai, Near Sharaf DG - Dubai - United Arab Emirates",
+		"Web": "asterhospital.com",
+		"Phone": "+971 4 440 0500",
+		"pos": "55.288734;25.252367;0",
+		 "type": "Success",
+		"Comments": "Aster Hospital:Aster Hospital aims to make a difference, with its patient-centric approach to medical care. Everything here is designed keeping in mind the comfort of patients. The spacious interiors, advanced facilities, and healthcare experts create a positive ambience that’s conducive to healing"
+	}, {
+		"ID": 1002,
+		"Name": "Zulekha Hospital ",
+		"Address": "204 Rd, Al Qusais Industrial Area - Dubai - United Arab Emirates",
+		"Web": "zulekhahospitals.com",
+		"Phone": "+971 4 267 8866",
+		"pos": "55.383973;25.291186;0",
+		"type": "Warning",
+		"Comments": "Zulekha Hospital: The Zulekha Healthcare Group found its roots in 1964 when its creator Dr. Zulekha Daud moved from her native India to Sharjah, UAE in order to pursue her dream of serving people in need and offer affordable medical facilities to all"
+	}, {
+		"ID": 1003,
+		"Name": "Thumbay Hospital Dubai",
+		"Address": "13th Street, Near Stadium Metro Station, Behind Lulu Hypermarket, Al Qusais - United Arab Emirates",
+		"Web": "thumbayhospital.com",
+		"Phone": "+971 4 440 0500",
+		"pos": "55.364953;25.281584;0",
+		"type": "Error",
+		"Comments": "Thumbay  Hospital:With our Hospitals and Medical Centre in Ajman, Fujairah, Sharjah, Dubai and Hyderabad (India), Thumbay Chain of Hospitals is one of the largest health care providers in the region. The group focuses on three pillars Education,Healthcare and Research."
+	}],
+	"Spots": [{
+		"pos": "55.288734;25.252367;0",
+		"tooltip": "Moscow",
+		"type": "Inactive",
+		"text": "12345"
+	}, {
+		"pos": "55.383973;25.291186;0",
+		"tooltip": "Delhi",
+		"type": "Success",
+		"text": "4"
+	}, {
+		"pos": "55.364953;25.281584;0",
+		"tooltip": "New York",
+		"type": "Error",
+		"text": "1"
+	}, {
+		"pos": "55.364745;25.281584;0",
+		"tooltip": "Beijing",
+		"type": "Warning",
+		"text": "123"
+	}]
+}

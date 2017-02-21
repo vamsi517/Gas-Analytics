@@ -1,0 +1,17 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.splitapp.controller.Master"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page>
+				<content>
+					
+					<List class="sapUiSmallMarginEnd" width="320px" headerText="Customers">
+						<StandardListItem title="Astar hospital mankhool" type="Navigation" press="onClick"></StandardListItem>
+						<StandardListItem title="Zulekha Hospital" type="Navigation" press="onClick1"></StandardListItem>
+						<StandardListItem title="Thumbay Hospital Dubai" type="Navigation" press="onClick2"></StandardListItem>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,49 @@
+<mvc:View xmlns:core="sap.ui.core"  xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+		controllerName="com.splitapp.controller.Detail1" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Aster Hospital Mankhool" showNavButton="true" navButtonPress="onPress">
+				<content>
+					<IconTabBar selectedKey="db" id="idTopLevelIconTabBar" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter id="idTabFilter" text="Customer details" icon="sap-icon://detail-view">
+								<form:SimpleForm id="objectForm">
+									<form:content>
+										<Label id="name" text="Name"/>
+										<Text  text="Aster Hospital Mankhool"/>
+										<Label  text="Address"/>
+										<Text text="Kuwait Road,Al Mankhool,Bur Dubai, 
+										Near Sharaf DG - Dubai - United Arab Emirates"/>
+										<Label text="Website"/>
+										<Text text="www.asterhospital.com"/>
+										<Label text="Phone"/>
+										<Text text="+971 4 440 0500"/>
+											<Label text="Comments"/>
+										<Text text="Aster Hospital:Aster Hospital aims to make a difference, with its patient-centric approach to medical care. Everything here is designed keeping in mind the comfort of patients. The spacious interiors, advanced facilities, and healthcare experts create a positive ambience that’s conducive to healing"/>
+										
+										
+									</form:content>
+								</form:SimpleForm>
+							</IconTabFilter>
+							<IconTabFilter  text="Gas Levels" icon="sap-icon://bar-chart">
+								
+								<viz:VizFrame xmlns="sap.viz" id="idcolumn"  width="100%">
+								
+								</viz:VizFrame>		
+								
+							</IconTabFilter>
+							<IconTabFilter id="idTabFilter2" text="Gas Cusumption"  icon="sap-icon://line-chart">
+								
+									<viz:VizFrame xmlns="sap.viz" id="idcolumn1"  width="100%">
+								
+								</viz:VizFrame>	
+								
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

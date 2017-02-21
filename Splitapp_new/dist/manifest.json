@@ -1,0 +1,125 @@
+{
+    "_version": "1.1.0",
+    "sap.app": {
+        "_version": "1.1.0",
+        "id": "com.splitapp",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.32.0"
+        }
+    },
+    "sap.ui": {
+        "_version": "1.1.0",
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_bluecrystal"
+        ]
+    },
+    "sap.ui5": {
+        "_version": "1.1.0",
+        "rootView": {
+            "viewName": "com.splitapp.view.app",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.30.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "com.splitapp.view",
+                "targetAggregation": "detailPages ",
+                "clearTarget": false
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "Master",
+                    "view": "Master",
+                    "targetAggregation": "masterPages",
+                    "targetControl": "splitapp",
+                    "subroutes": [
+                        {
+                            "pattern": "",
+                            "name": "Detail",
+                            "view": "Detail",
+                            "targetAggregation": "detailPages"
+                        },
+                        {
+                            "pattern": "Customer1/",
+                            "name": "Detail1",
+                            "view": "Detail1",
+                            "targetAggregation": "detailPages"
+                        },
+                        {
+                            "pattern": "Customer2/",
+                            "name": "Detail2",
+                            "view": "Detail2",
+                            "targetAggregation": "detailPages"
+                        },
+                        {
+                            "pattern": "Customer3/",
+                            "name": "Detail3",
+                            "view": "Detail3",
+                            "targetAggregation": "detailPages"
+                        }
+                    ]
+                }
+            ]
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "com.splitapp.i18n.i18n"
+                }
+            },
+            "CustomersI": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model.Customers"
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        }
+    },
+    "sap.platform.hcp": {
+        "uri": "",
+        "_version": "1.1.0"
+    }
+}

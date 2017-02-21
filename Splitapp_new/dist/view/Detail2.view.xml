@@ -1,0 +1,52 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:form="sap.ui.layout.form" 
+    xmlns:viz="sap.viz.ui5.controls" xmlns="sap.m" controllerName="com.splitapp.controller.Detail2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Zulekha Hospital" showNavButton="true" navButtonPress="onPress">
+				<content>
+					
+						<IconTabBar
+						selectedKey="db"
+						id="idTopLevelIconTabBar"
+						class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter id="idTabFilter" text="Customer details" icon="sap-icon://detail-view">
+								
+									<form:SimpleForm id="objectForm">
+									<form:content>
+										<Label id="name" text="Name"/>
+										<Text  text="Zulekha Hospital"/>
+										<Label  text="Address"/>
+										<Text text="204 Rd, Al Qusais Industrial Area - Dubai - United Arab Emirates"/>
+										<Label text="Website"/>
+										<Text text="zulekhahospitals.com"/>
+										<Label text="Phone"/>
+										<Text text="+971 4 267 8866"/>
+											<Label text="Comments"/>
+										<Text text="ulekha Hospital: The Zulekha Healthcare Group found its roots in 1964 when its creator Dr. Zulekha Daud moved from her native India to Sharjah, UAE in order to pursue her dream of serving people in need and offer affordable medical facilities to all"/>
+										
+										
+									</form:content>
+								</form:SimpleForm>
+								
+							</IconTabFilter>
+								<IconTabFilter id="idTabFilter1" text="Gas Levels" icon="sap-icon://bar-chart">
+									<viz:VizFrame xmlns="sap.viz" id="idcolumn"  width="100%">
+								
+								</viz:VizFrame>	
+								
+							</IconTabFilter>
+							<IconTabFilter id="idTabFilter2" text="Gas Cusumption" icon="sap-icon://line-chart">
+									<viz:VizFrame xmlns="sap.viz" id="idcolumn1"  width="100%">
+								
+								</viz:VizFrame>	
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
